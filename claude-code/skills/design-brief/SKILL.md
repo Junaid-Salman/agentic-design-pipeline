@@ -15,6 +15,7 @@ Request: $ARGUMENTS
 Start from the request, this conversation, and the project itself. Before asking anything, look at:
 - `README`, `CLAUDE.md`, `package.json` / `pubspec.yaml` / `*.xcodeproj` for product, stack and platform
 - existing tokens or theme files (`tailwind.config.*`, `theme.*`, `tokens.*`, CSS variables, `Color+*.swift`)
+- a logo and brand guide from the logo-design skill (`design/logo/brand-guide.html`, `design/logo/masters/`): use its palette and typefaces for LOOK and CONSTRAINTS, and its logo files in headers and app icons
 - existing components folder, so new screens reuse them
 
 Fill every field you can:
@@ -40,7 +41,7 @@ VARIATIONS: <one | 3 distinct directions>
   - Platform: responsive web (1440 + 390) unless the request or project says mobile.
   - Content: realistic sample data that fits the product, plus one awkward edge case (a long name, zero results).
   - States: empty and error for any screen that lists or submits data.
-  - Look: the project's existing tokens if any; otherwise a direction drawn from the product's own world.
+  - Look: the project's existing tokens or logo brand guide if any; otherwise a direction drawn from the product's own world. If this is a new product with no logo or brand yet, mention in one line that `/logo-design` can create one first so the screens can be built on it; don't block on it.
   - Constraints: WCAG AA, light and dark.
   - Variations: 3 directions for a first look at something new; 1 for a screen inside an existing system.
   - Output: code in this project if it has a UI stack; otherwise an HTML prototype.

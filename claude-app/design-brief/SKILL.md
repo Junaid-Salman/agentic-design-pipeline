@@ -32,7 +32,7 @@ VARIATIONS: <one | 3 distinct directions>
   - Platform: responsive web (1440 + 390) unless the request says mobile/iOS/Android.
   - Content: invent realistic sample data that fits the product, including one awkward edge case (a long name, zero results).
   - States: include empty and error for any screen that lists or submits data.
-  - Look: the user's default design system if one exists; otherwise a direction drawn from the product's own world.
+  - Look: the user's default design system, or a brand guide made with the logo-design skill earlier, if one exists; otherwise a direction drawn from the product's own world. If this is a new product with no logo or brand yet, mention in one line that `/logo-design` can create one first so the screens can be built on it; don't block on it.
   - Constraints: WCAG AA, light and dark.
   - Variations: 3 directions for a first look at something new; 1 for a screen inside an existing system.
 - If the user is not there to answer, use the defaults, say which ones you assumed, and continue.
